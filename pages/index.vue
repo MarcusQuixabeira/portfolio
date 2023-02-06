@@ -1,7 +1,9 @@
 <template>
     <div>
         <Header />
-        <Main />
+        <AboutMe />
+        <LastExperiences />
+        <SoftSkills />
         <Footer />
     </div>
 </template>

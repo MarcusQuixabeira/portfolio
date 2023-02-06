@@ -12,7 +12,47 @@ html {
 body {
     font-family: 'Inter';
     font-style: normal;
+    font-weight: 400;
     background-color: $base-color;
     margin: 0px;
     padding: 0px;
+}
+
+.deep-blue {
+    background-color: $deep-blue;
+    color: $white
+}
+
+.light-blue {
+    background-color: $light-blue;
+    color: $white
+}
+
+.deep-grey {
+    background-color: $deep-grey;
+    color: $white
+}
+
+.light-grey {
+    background-color: $light-grey;
+    color: $white
+}
+
+.deep-green {
+    background-color: $deep-green;
+    color: $white
+}
+
+.light-green {
+    background-color: $light-green;
+    color: $white
+}
+
+.purple {
+    background-color: $purple;
+    color: $white
+}
+
+.hidden {
+    display: none;
 }

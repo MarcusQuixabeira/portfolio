@@ -59,12 +59,11 @@ export default defineComponent({
     .credentials {
         display: flex;
         flex-direction: column;
-        gap: 31px;
-        justify-content: space-around;
+        gap: 30px;
         align-items: center;
 
         .name {
-            font-weight: 700px;
+            font-weight: 700;
             font-size: 36px;
             line-height: 44px;
             max-height: 87px;
@@ -84,6 +83,7 @@ export default defineComponent({
             justify-content: center;
             align-items: center;
             gap: 10px;
+
             a {
                 color: $golden;
                 font-size: 30px;
@@ -97,6 +97,7 @@ export default defineComponent({
             justify-content: center;
             align-items: center;
             gap: 10px;
+
             a {
                 padding: 3px 5px;
                 border: 1px solid $golden;
