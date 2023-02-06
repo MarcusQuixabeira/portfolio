@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    color: $deep-blue;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: $base-color;
+    margin: 0px;
+    padding: 0px;
+}
