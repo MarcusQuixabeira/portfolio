@@ -16,7 +16,6 @@ defineProps<{ color: String, coverClass?: String, contentClass?: String }>()
 <style lang="scss" scoped>
 .card {
   width: 100%;
-  cursor: pointer;
   transition: all 0.1s ease-in;
 
   .cover {
@@ -31,7 +30,7 @@ defineProps<{ color: String, coverClass?: String, contentClass?: String }>()
 
   .content {
     display: flex;
-    padding-inline: 50px;
+    padding: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -43,7 +42,7 @@ defineProps<{ color: String, coverClass?: String, contentClass?: String }>()
   }
 }
 .card:hover {
-  transform: scale(1.25);
+  transform: scale(1.10);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
   .cover {

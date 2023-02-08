@@ -8,10 +8,7 @@ export default defineComponent({
                 imageUrl: 'https://picsum.photos/320',
                 imageAlt: 'Marcus Quixabeira wishing make awesome code',
                 name: 'Marcus Vinicius Quixabeira Bezerra dos Santos',
-                title: 'Fullstack Software Engineer and Javascript Lover',
-                linkedinUrl: 'https://www.linkedin.com/in/marcus-vinicius-q-b-dos-santos-5954bb140/',
-                githubUrl: 'https://github.com/MarcusQuixabeira',
-                email: 'mquixaba@gmail.com'
+                title: 'Fullstack Software Engineer and Javascript Lover'
             }
         }
     }
@@ -26,11 +23,7 @@ export default defineComponent({
         <div class="credentials">
             <div class="name">{{ header.name }}</div>
             <div class="title">{{ header.title }}</div>
-            <div class="social-links">
-                <a :href="header.linkedinUrl" target="_blank"><nuxt-icon name="mdi_linkedin" /></a>
-                <a :href="header.githubUrl" target="_blank"><nuxt-icon name="jam_github" /></a>
-                <a :href="`mailto:${header.email}`" target="_blank"><nuxt-icon name="mdi_email" /></a>
-            </div>
+            <SocialLinks />
             <div class="languages">
                 <a href="#">PT-BR</a>
                 <a href="#">EN-US</a>
