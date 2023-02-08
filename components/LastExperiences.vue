@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { Ref } from 'vue'
+import { reactive } from 'vue'
 
 interface Experience {
   cover: string,
@@ -12,7 +11,7 @@ interface Experience {
   jobDescription: string
 }
 
-const experiences: Ref<Experience[]> = ref(
+const experiences: Experience[] = reactive(
   [
     {
       cover: 'R',

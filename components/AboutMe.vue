@@ -1,15 +1,14 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { reactive } from 'vue'
 
-export default defineComponent({
-  data() {
-    return {
-      aboutMe: {
-        title: 'ABOUT ME',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin ligula sit amet, porttitor sodales velit. Maecenas at convallis velit. In hac habitasse platea dictumst. Curabitur mi ipsum, eleifend sit amet ornare facilisis, vestibulum nec est. Donec iaculis sed dolor non lobortis. Nulla facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis. Nunc iaculis sapien non nisl dapibus tincidunt.',
-      }
-    }
-  }
+interface AboutMe {
+  title: String,
+  text: String
+}
+
+const aboutMe: AboutMe = reactive({
+  title: 'ABOUT ME',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin ligula sit amet, porttitor sodales velit. Maecenas at convallis velit. In hac habitasse platea dictumst. Curabitur mi ipsum, eleifend sit amet ornare facilisis, vestibulum nec est. Donec iaculis sed dolor non lobortis. Nulla facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis. Nunc iaculis sapien non nisl dapibus tincidunt.',
 })
 </script>
 

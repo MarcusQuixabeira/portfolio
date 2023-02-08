@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { Ref } from 'vue'
+import { reactive } from 'vue'
 
 interface SocialLinks {
   linkedinUrl: string,
@@ -8,7 +7,7 @@ interface SocialLinks {
   email: string
 }
 
-const socialLinks: Ref<SocialLinks> = ref({
+const socialLinks: SocialLinks = reactive({
   linkedinUrl: 'https://www.linkedin.com/in/marcus-vinicius-q-b-dos-santos-5954bb140/',
   githubUrl: 'https://github.com/MarcusQuixabeira',
   email: 'mquixaba@gmail.com'

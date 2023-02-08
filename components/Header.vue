@@ -1,17 +1,18 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { reactive } from 'vue'
 
-export default defineComponent({
-    data() {
-        return {
-            header: {
-                imageUrl: 'https://picsum.photos/320',
-                imageAlt: 'Marcus Quixabeira wishing make awesome code',
-                name: 'Marcus Vinicius Quixabeira Bezerra dos Santos',
-                title: 'Fullstack Software Engineer and Javascript Lover'
-            }
-        }
-    }
+interface Header {
+  imageUrl: String,
+  imageAlt: String,
+  name: String,
+  title: String
+}
+
+const header: Header = reactive({
+  imageUrl: 'https://picsum.photos/320',
+  imageAlt: 'Marcus Quixabeira wishing make awesome code',
+  name: 'Marcus Vinicius Quixabeira Bezerra dos Santos',
+  title: 'Fullstack Software Engineer and Javascript Lover'
 })
 </script>
 
@@ -69,20 +70,6 @@ export default defineComponent({
             font-size: 16px;
             line-height: 19px;
             color: $golden;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-            a {
-                color: $golden;
-                font-size: 30px;
-                color: $golden;
-                text-decoration: none;
-            }
         }
 
         .languages {

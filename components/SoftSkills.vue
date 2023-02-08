@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { Ref } from 'vue'
+import { reactive } from 'vue'
 
 interface SoftSkill {
   title: string,
   skills: string[]
 }
 
-const softSkills: Ref<SoftSkill> = ref({
+const softSkills: SoftSkill = reactive({
   title: 'SOFT SKILLS',
   skills: [
     'Teamwork',

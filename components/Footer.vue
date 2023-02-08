@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import type { Ref } from 'vue'
+import { reactive } from 'vue'
 
 interface Footer {
   createdAt: Date,
   text: string
 }
 
-const footer: Ref<Footer> = ref({
+const footer: Footer = reactive({
   createdAt: new Date('2023-02-01'),
   text: 'Crafted with love by Marcus Quixabeira'
 })
 
 function getCopyWriteVerbiage() {
-  const start: String = formatDate(new Date(footer.value.createdAt), 'YYYY');
+  const start: String = formatDate(new Date(footer.createdAt), 'YYYY');
   const now: String = formatDate(new Date(), 'YYYY');
   const verbiage: String = 'All right reserved';
   if (start == now) {
