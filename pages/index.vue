@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <Header />
-        <AboutMe />
-        <LastExperiences />
-        <SoftSkills />
-        <Footer />
-    </div>
+  <div>
+    <Header />
+    <AboutMe />
+    <LastExperiences />
+    <SoftSkills />
+    <Footer />
+  </div>
 </template>

@@ -17,76 +17,76 @@ const header: Header = reactive({
 </script>
 
 <template>
-    <header class="header">
-        <div class="portrait">
-            <img :src="header.imageUrl" :alt="header.imageAlt">
-        </div>
-        <div class="credentials">
-            <div class="name">{{ header.name }}</div>
-            <div class="title">{{ header.title }}</div>
-            <SocialLinks />
-            <div class="languages">
-                <a href="#">PT-BR</a>
-                <a href="#">EN-US</a>
-            </div>
-        </div>
-    </header>
+  <header class="header">
+    <div class="portrait">
+      <img :src="header.imageUrl" :alt="header.imageAlt">
+    </div>
+    <div class="credentials">
+      <div class="name">{{ header.name }}</div>
+      <div class="title">{{ header.title }}</div>
+      <SocialLinks />
+      <div class="languages">
+        <a href="#">PT-BR</a>
+        <a href="#">EN-US</a>
+      </div>
+    </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
 .header {
-    background-color: $deep-blue;
-    min-height: 400px;
-    color: $white;
+  background-color: $deep-blue;
+  min-height: 400px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  align-items: center;
+
+  .portrait {
+    img {
+      border: 3px solid $golden;
+      border-radius: 4px;
+    }
+  }
+
+  .credentials {
     display: flex;
-    justify-content: center;
-    gap: 300px;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
 
-    .portrait {
-        img {
-            border: 3px solid $golden;
-            border-radius: 4px;
-        }
+    .name {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      max-height: 87px;
+      max-width: 507px;
+      text-align: center;
     }
 
-    .credentials {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
+    .title {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $golden;
+    }
 
-        .name {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 44px;
-            max-height: 87px;
-            max-width: 507px;
-            text-align: center;
-        }
+    .languages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
 
-        .title {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: $golden;
-        }
-
-        .languages {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-            a {
-                padding: 3px 5px;
-                border: 1px solid $golden;
-                color: $golden;
-                font-size: 10px;
-                font-weight: 700;
-                text-decoration: none;
-            }
+        a {
+          padding: 3px 5px;
+          border: 1px solid $golden;
+          color: $golden;
+          font-size: 10px;
+          font-weight: 700;
+          text-decoration: none;
         }
     }
+  }
 }
 </style>
