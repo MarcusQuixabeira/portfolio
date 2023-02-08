@@ -1,13 +1,13 @@
 import dayjs from "dayjs";
 
-export function formatDate(value: Date, format: string): String {
+export function formatDate(value: Date, format: string): string {
   return dayjs(value).format(format);
 }
 
-export function readableDateInterval(startDate: Date, endDate: Date): String|undefined {
-  let yearLabel: String = 'year'
-  let monthLabel: String = 'month'
-  let result, yearsVerbiage, monthsVerbiage: String = ''
+export function readableDateInterval(startDate: Date, endDate: Date): string|undefined {
+  let yearLabel: string = 'year'
+  let monthLabel: string = 'month'
+  let result, yearsVerbiage, monthsVerbiage: string = ''
   if (startDate && endDate) {
     const date1 = dayjs(startDate)
     const date2 = dayjs(endDate)

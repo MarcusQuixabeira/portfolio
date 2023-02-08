@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ color: String, coverClass?: String, contentClass?: String }>()
+defineProps<{ color: string, coverClass?: string, contentClass?: string }>()
 </script>
 
 <template>

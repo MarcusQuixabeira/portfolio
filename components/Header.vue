@@ -2,10 +2,10 @@
 import { reactive } from 'vue'
 
 interface Header {
-  imageUrl: String,
-  imageAlt: String,
-  name: String,
-  title: String
+  imageUrl: string,
+  imageAlt: string,
+  name: string,
+  title: string
 }
 
 const header: Header = reactive({

@@ -2,8 +2,8 @@
 import { reactive } from 'vue'
 
 interface AboutMe {
-  title: String,
-  text: String
+  title: string,
+  text: string
 }
 
 const aboutMe: AboutMe = reactive({
