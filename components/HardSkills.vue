@@ -7,51 +7,60 @@ const hardSkills = reactive(
       {
         cover: 'J',
         name: 'Javascript',
-        years: 5
+        subs: ['Node', 'Npm', 'Gulp', 'Typescript'],
+        years: 15
       },
       {
         cover: 'V',
         name: 'Vue.js',
-        years: 5
+        subs: ['Vue 2', 'Vue 3', 'Vue-cli', 'Webpack', 'Vuex', 'Vuetify', 'BootstrapVue'],
+        years: 8
       },
     ],
     [
       {
         cover: 'P',
         name: 'Python',
-        years: 5
+        subs: ['Jinja', 'Pymongo', 'Graphene', 'Alenbic', 'Marshmallow', 'Pyramid', 'Flask', 'MongoEngine'],
+        years: 6
       },
       {
         cover: 'G',
         name: 'Git',
-        years: 5
+        subs: ['Github', 'Github Actions', 'Bitbucket', 'Bitbucket Pipelines', 'Jira'],
+        years: 10
       },
       {
         cover: 'N',
         name: 'Nuxt.js',
-        years: 5
+        subs: [],
+        years: 1
       },
     ],
     [
       {
-        cover: 'S',
-        name: 'SASS',
-        years: 5
+        cover: 'C',
+        name: 'CSS',
+        subs: ['SASS', 'SCSS'],
+        years: 8
       },
       {
         cover: 'G',
         name: 'Mongodb',
-        years: 5
+        subs: [],
+        years: 6
       },
       {
         cover: 'E',
         name: 'Express',
-        years: 5
+        subs: [],
+        years: 1
       },
       {
         cover: 'G',
         name: 'GraphQL',
-        years: 5
+        subs: [],
+        years: 4
       },
     ],
   ],
@@ -77,7 +86,7 @@ function getColor(): string {
 
 <style lang="scss" scoped>
 .hard-skills {
-  min-height: 800px;
+  min-height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;

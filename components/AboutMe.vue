@@ -8,7 +8,17 @@ interface AboutMe {
 
 const aboutMe: AboutMe = reactive({
   title: 'ABOUT ME',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin ligula sit amet, porttitor sodales velit. Maecenas at convallis velit. In hac habitasse platea dictumst. Curabitur mi ipsum, eleifend sit amet ornare facilisis, vestibulum nec est. Donec iaculis sed dolor non lobortis. Nulla facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis. Nunc iaculis sapien non nisl dapibus tincidunt.',
+  text: `
+    Developing systems on web since 2007 (But never as a true web designer as you can see :D), I had the oportunity to work with a vast number of technologies.
+    Everything started with Java EE, using pojos, jsp, css, html, javascript, struts, tomcat and hibernate. Later, around 2012, I started to study and work with Ruby on
+    RubyOnRails framework. At 2016 still heavily working with RoR I had my first experiences with decoupled archtectures and I could create and evolve Rest APIs
+    and also some clients like progressive webapps and hybrid apps using cool javascript frameworks like Ionic (Angular) and Quasar (Vue.js). At 2017 I had my
+    first international experience working remotelly with Python, once more time working developing to web using Pyramid and Flask as main web frameworks.
+    Big challenges everyday: huge data set, legacy code, poor testing coverage, high coupling, bottlenecks, but also a brilliant and diligent team working hard in
+    search of constant learning improvement. In mid-2022, I decided to start a new tnternational adventure, I wanted to work more intensively with javascript,
+    and I accepted an offer where I finally could work with javascript on back-end (Node, Express) and also on front-end (Vue.js, Nuxt.js), helping
+    to create and evolve high demand APIs, microservices, and fancy web systems.
+  `,
 })
 </script>
 
@@ -23,8 +33,10 @@ const aboutMe: AboutMe = reactive({
 .about-me {
   min-height: 400px;
   display: flex;
+  padding: 80px;
+  gap: 30px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   h2 {
     margin: 0px;
@@ -36,7 +48,7 @@ const aboutMe: AboutMe = reactive({
     margin: 0px;
     font-size: 22px;
     line-height: 26px;
-    text-align: center;
+    text-align: justify;
     padding-inline: 10%;
   }
 }

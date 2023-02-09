@@ -20,7 +20,13 @@ const experiences: Experience[] = reactive(
       company: 'Rapchat Inc',
       startDate: new Date('2022-07-01'),
       endDate: new Date('2023-01-27'),
-      jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin la facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis.'
+      jobDescription: `
+        Developed and evolved high performance APIs to support mobile and web
+        clients, using Express, Mongoose and Mongodb. Designed and implemented
+        microservices using Javascript or Python on Google Cloud Platform. Developed
+        and integrated public and private decoupled web applications to support the
+        product using NUXT.JS as the main web framework.
+      `
     },
     {
       cover: 'A',
@@ -29,7 +35,10 @@ const experiences: Experience[] = reactive(
       company: 'Anchor Loans',
       startDate: new Date('2022-04-01'),
       endDate: new Date('2022-06-31'),
-      jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin la facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis.'
+      jobDescription:`
+        Managed teams in specific Business areas, coaching developers on their careers
+        and in good development practices. Worked recruiting new talents as well.
+      `
     },
     {
       cover: 'A',
@@ -38,7 +47,12 @@ const experiences: Experience[] = reactive(
       company: 'Anchor Loans',
       startDate: new Date('2017-10-01'),
       endDate: new Date('2022-03-27'),
-      jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin la facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis.'
+      jobDescription: `
+        Developed and evolved public and internal web applications using Python,
+        Pyramid, Flask, Vue.js, GraphQL, Mongodb and other technologies. Redesigned
+        and Rewrote some legacy web applications in order to enhance usability,
+        performance and maintainability.
+      `
     },
     {
       cover: 'C',
@@ -47,7 +61,12 @@ const experiences: Experience[] = reactive(
       company: 'Caverna Labs',
       startDate: new Date('2018-12-01'),
       endDate: new Date('2022-08-01'),
-      jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin la facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis.'
+      jobDescription: `
+        Mediated line of business and engineering team in order to create and evolve
+        accurate solutions as much as possible. Managed engineering team, mentoring
+        and helping developers on best design, developing practices and agile
+        methodologies. Recruited and trained new talents as well.
+      `
     },
     {
       cover: 'C',
@@ -56,7 +75,11 @@ const experiences: Experience[] = reactive(
       company: 'Caverna Labs',
       startDate: new Date('2014-01-01'),
       endDate: new Date('2017-09-01'),
-      jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, quam ut condimentum interdum, nisl nibh pretium magna, at vehicula massa sem at elit. Aliquam porttitor leo eu cursus vulputate. Integer commodo faucibus nibh eget sagittis. Aliquam nunc nibh, viverra sollicitudin la facilisi. Mauris nec feugiat libero, vitae luctus mi. Ut a odio nec mi porttitor venenatis.'
+      jobDescription: `
+        Developed and evolved public and internal web applications using Ruby on Rails.
+        Developed progressive web applications and hybrid mobile apps using Ionic
+        (Angular) and Quasar (Vue.js) Frameworks.
+      `
     },
   ]
 )

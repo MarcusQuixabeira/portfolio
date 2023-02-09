@@ -36,9 +36,10 @@ const softSkills: SoftSkill = reactive({
 <style lang="scss" scoped>
 .soft-skills {
   min-height: 400px;
+  padding: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   h2 {
     margin: 0px;

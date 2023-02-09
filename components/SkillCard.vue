@@ -3,13 +3,14 @@ import { computed } from 'vue'
 
 interface HardSkill {
   cover: string,
+  subs: string[],
   name: string,
   years: number,
 }
 
 const props = defineProps<{ skill: HardSkill, color: string }>()
 
-const timeVerbiage = computed<string>(() => `${props.skill.years} ${ props.skill.years && props.skill.years > 0 ? 'years' : 'year'}`)
+const timeVerbiage = computed<string>(() => `${props.skill.years} ${ props.skill.years && props.skill.years > 1 ? 'years' : 'year'} of experience time`)
 </script>
 
 <template>
@@ -19,7 +20,9 @@ const timeVerbiage = computed<string>(() => `${props.skill.years} ${ props.skill
     </template>
     <template v-slot:content>
       <div class="name">{{ skill.name }}</div>
-      <div class="time-label">Professional Experience Time</div>
+      <div v-if="skill.subs && skill.subs.length > 0" class="subs">
+        <span v-for="item in skill.subs" v-bind:key="item">{{ item }}</span>
+      </div>
       <div class="time">
         {{ timeVerbiage }}
       </div>
@@ -33,13 +36,18 @@ const timeVerbiage = computed<string>(() => `${props.skill.years} ${ props.skill
   font-weight: 700;
 }
 
-.time-label {
+.time {
   font-size: 24px;
   font-weight: 700;
 }
 
-.time {
-  font-size: 18px;
+.time-label {
+  font-size: 16px;
   font-weight: 700;
+}
+
+.subs {
+  display: flex;
+  gap: 10px;
 }
 </style>

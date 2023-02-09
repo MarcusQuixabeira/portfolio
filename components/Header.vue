@@ -9,24 +9,24 @@ interface Header {
 }
 
 const header: Header = reactive({
-  imageUrl: 'https://picsum.photos/320',
-  imageAlt: 'Marcus Quixabeira wishing make awesome code',
+  imageUrl: '/images/mquixaba.jpeg',
+  imageAlt: 'Marcus Quixabeira wishing make some awesome code again',
   name: 'Marcus Vinicius Quixabeira Bezerra dos Santos',
-  title: 'Fullstack Software Engineer and Javascript Lover'
+  title: 'Fullstack Senior Software Developer and Javascript Lover'
 })
 </script>
 
 <template>
   <header class="header">
     <div class="portrait">
-      <img :src="header.imageUrl" :alt="header.imageAlt">
+      <img :src="header.imageUrl" :alt="header.imageAlt" width="320">
     </div>
     <div class="credentials">
       <div class="name">{{ header.name }}</div>
       <div class="title">{{ header.title }}</div>
       <SocialLinks />
       <div class="languages">
-        <a href="#">PT-BR</a>
+        <a href="#" class="disabled">PT-BR</a>
         <a href="#">EN-US</a>
       </div>
     </div>
@@ -87,6 +87,11 @@ const header: Header = reactive({
           text-decoration: none;
         }
     }
+  }
+  .disabled {
+    cursor: not-allowed;
+    color: $deep-grey !important;
+    border: 1px solid $deep-grey !important;
   }
 }
 </style>
