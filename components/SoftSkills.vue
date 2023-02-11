@@ -33,7 +33,7 @@ defineProps<{ data: SoftSkills }>()
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    padding-inline: 200px;
+    padding-inline: 100px;
 
     .skill {
       padding: 10px;
