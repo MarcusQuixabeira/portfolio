@@ -24,7 +24,7 @@ defineProps<{ data: OtherInfo}>()
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 60px;
+  padding: 70px;
   h2 {
     font-size: 26px;
     padding: 0px;
