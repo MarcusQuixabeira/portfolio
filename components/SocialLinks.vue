@@ -1,24 +1,12 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
-
-interface SocialLinks {
-  linkedinUrl: string,
-  githubUrl: string,
-  email: string
-}
-
-const socialLinks: SocialLinks = reactive({
-  linkedinUrl: 'https://www.linkedin.com/in/marcus-vinicius-q-b-dos-santos-5954bb140/',
-  githubUrl: 'https://github.com/MarcusQuixabeira',
-  email: 'mquixaba@gmail.com'
-})
+const data = reactive(await fetchSocials())
 </script>
 
 <template>
   <div class="social-links">
-    <a :href="socialLinks.linkedinUrl" target="_blank"><nuxt-icon name="mdi_linkedin" /></a>
-    <a :href="socialLinks.githubUrl" target="_blank"><nuxt-icon name="jam_github" /></a>
-    <a :href="`mailto:${socialLinks.email}`" target="_blank"><nuxt-icon name="mdi_email" /></a>
+    <a :href="data.linkedinUrl" target="_blank"><nuxt-icon name="mdi_linkedin" /></a>
+    <a :href="data.githubUrl" target="_blank"><nuxt-icon name="jam_github" /></a>
+    <a :href="`mailto:${data.email}`" target="_blank"><nuxt-icon name="mdi_email" /></a>
   </div>
 </template>
 

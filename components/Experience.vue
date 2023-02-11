@@ -1,14 +1,4 @@
 <script setup lang="ts">
-interface Experience {
-  cover: string,
-  remote: boolean,
-  jobTitle: string,
-  company: string,
-  startDate: Date,
-  endDate: Date,
-  jobDescription: string
-}
-
 defineProps<{ experience: Experience, color: string }>()
 </script>
 
@@ -20,8 +10,10 @@ defineProps<{ experience: Experience, color: string }>()
     <template v-slot:content>
       <div class="job-title">{{ experience.jobTitle }}</div>
       <div class="company">{{ experience.company }}</div>
-      <div class="date-interval">{{ formatDate(experience.startDate, 'YYYY MMM') }} - {{ formatDate(experience.endDate, 'YYYY MMM') }}</div>
-      <div class="time">{{ readableDateInterval(experience.startDate, experience.endDate) }}</div>
+      <div class="date-interval">
+        {{ formatDate(experience.startDate, 'YYYY MMM', getLanguage()) }} - {{ formatDate(experience.endDate, 'YYYY MMM', getLanguage()) }}
+      </div>
+      <div class="time">{{ readableDateInterval(experience.startDate, experience.endDate, getLanguage()) }}</div>
       <div class="job-description">
         {{ experience.jobDescription }}
       </div>

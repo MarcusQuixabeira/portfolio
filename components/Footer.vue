@@ -1,31 +1,21 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
-
-interface Footer {
-  createdAt: Date,
-  text: string
-}
-
-const footer: Footer = reactive({
-  createdAt: new Date('2023-02-01'),
-  text: 'Crafted with love by Marcus Quixabeira'
-})
+const footer = defineProps<{ data: Footer }>()
 
 function getCopyWriteVerbiage() {
-  const start: String = formatDate(new Date(footer.createdAt), 'YYYY');
+  const start: String = formatDate(new Date(footer.data.createdAt), 'YYYY');
   const now: String = formatDate(new Date(), 'YYYY');
   const verbiage: String = 'All right reserved';
   if (start == now) {
-    return `&#169; ${start} ${verbiage}`
+    return `&#169; ${start} ${footer.data.copyRights}`
   }
-  return `&#169; ${start} - ${now} ${verbiage}`
+  return `&#169; ${start} - ${now} ${footer.data.copyRights}`
 }
 </script>
 
 <template>
   <footer class="deep-blue">
     <div class="copywrite" v-html="getCopyWriteVerbiage()"></div>
-    <div class="text">{{ footer.text }}</div>
+    <div class="text">{{ footer.data.developedBy }}</div>
     <SocialLinks />
   </footer>
 </template>

@@ -1,32 +1,13 @@
+
 <script setup lang="ts">
-import { reactive } from 'vue'
-
-interface SoftSkill {
-  title: string,
-  skills: string[]
-}
-
-const softSkills: SoftSkill = reactive({
-  title: 'SOFT SKILLS',
-  skills: [
-    'Teamwork',
-    'Self-learning',
-    'Feedback',
-    'Good communication',
-    'Resourcefulness',
-    'Empathy',
-    'Problem-solving attitude',
-    'Adaptability',
-    'Critical thinking',
-  ] 
-})
+defineProps<{ data: SoftSkills }>()
 </script>
 
 <template>
   <section class="soft-skills">
-    <h2>{{ softSkills.title }}</h2>
+    <h2>{{ data.title }}</h2>
     <div class="list">
-      <div class="skill" v-for="(skill, index) in softSkills.skills" v-bind:key="`skill-${index}`">
+      <div class="skill" v-for="(skill, index) in data.skills" v-bind:key="`skill-${index}`">
         {{ skill }}
       </div>
     </div>

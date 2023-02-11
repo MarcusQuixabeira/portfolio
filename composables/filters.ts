@@ -1,12 +1,16 @@
-import dayjs from "dayjs";
+import dayjs from 'dayjs';
+import ptBr from 'dayjs/locale/pt-br'
 
-export function formatDate(value: Date, format: string): string {
-  return dayjs(value).format(format);
+export function formatDate(value: Date, format: string, lang: string="enUs"): string {
+  if (lang === 'ptBr') {
+    return dayjs(value).locale(ptBr).format(format);
+  }
+  return dayjs(value).format(format)
 }
 
-export function readableDateInterval(startDate: Date, endDate: Date): string|undefined {
-  let yearLabel: string = 'year'
-  let monthLabel: string = 'month'
+export function readableDateInterval(startDate: Date, endDate: Date, lang: string="enUs"): string|undefined {
+  let yearLabel: string = lang === 'enUs' ? 'year' : 'ano'
+  let monthLabel: string = lang === 'enUs' ? 'month' : 'mês'
   let result, yearsVerbiage, monthsVerbiage: string = ''
   if (startDate && endDate) {
     const date1 = dayjs(startDate)
@@ -16,14 +20,14 @@ export function readableDateInterval(startDate: Date, endDate: Date): string|und
     const remainderMonths: number = totalMonthsDiff % 12
     if (totalYearsDiff >= 1) {
       if (totalMonthsDiff > 1) {
-        yearLabel = 'years'
+        yearLabel = lang === 'enUs' ? 'years' : 'anos'
       }
       yearsVerbiage = `${totalYearsDiff.toString()} ${yearLabel}`
       result = yearsVerbiage
     }
     if (remainderMonths >= 1) {
       if (remainderMonths > 1) {
-        monthLabel = 'months'
+        monthLabel = lang === 'enUs' ? 'months' : 'mêses'
       }
       monthsVerbiage = `${remainderMonths.toString()} ${monthLabel}`
       result = monthsVerbiage

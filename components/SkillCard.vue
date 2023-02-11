@@ -1,16 +1,16 @@
+
 <script setup lang="ts">
-import { computed } from 'vue'
-
-interface HardSkill {
-  cover: string,
-  subs: string[],
-  name: string,
-  years: number,
-}
-
 const props = defineProps<{ skill: HardSkill, color: string }>()
 
-const timeVerbiage = computed<string>(() => `${props.skill.years} ${ props.skill.years && props.skill.years > 1 ? 'years' : 'year'} of experience time`)
+function getXpTimeVerbiage(skill: HardSkill) {
+  let verbiage = isEnglish() ? 'years of experience' : 'anos de experiencia'
+  
+  if (skill.years === 1) {
+    verbiage = verbiage.replace('years', 'year').replace('anos', 'ano')
+  }
+
+  return `${skill.years} ${verbiage}`
+}
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const timeVerbiage = computed<string>(() => `${props.skill.years} ${ props.skill
         <span v-for="item in skill.subs" v-bind:key="item">{{ item }}</span>
       </div>
       <div class="time">
-        {{ timeVerbiage }}
+        {{ getXpTimeVerbiage(skill) }}
       </div>
     </template>
   </ExpandableCard>

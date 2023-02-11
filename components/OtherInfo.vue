@@ -1,31 +1,17 @@
-<script setup lang="ts">
-import { reactive } from 'vue'
 
-const otherInfo = reactive({
-  title: 'ACADEMIC FORMATIONS',
-  formations: [
-    {
-      degree: 'Technologist Degree in Systems Analysis and Development',
-      institution: 'Centro Universitário Estácio de Ribeirão Preto',
-      graduatedAt: new Date('2021-07-01')
-    },
-    {
-      degree: 'Bachelor of Biological Sciences',
-      institution: 'Universidade Federal do Piauí',
-      graduatedAt: new Date('2012-01-01')
-    }
-  ]
-})
+<script setup lang="ts">
+defineProps<{ data: OtherInfo}>()
+
 </script>
 
 <template>
   <section class="other-info">
-    <h2>{{ otherInfo.title }}</h2>
+    <h2>{{ data.title }}</h2>
     <div class="academic-formations">
-      <div v-for=" (formation, index) in otherInfo.formations" v-bind:key="`formation_${index}`" class="formation">
+      <div v-for=" (formation, index) in data.formations" v-bind:key="`formation_${index}`" class="formation">
         <div class="degree">{{ formation.degree }}</div>
         <div class="institution">{{ formation.institution }}</div>
-        <div class="graduated-at">Graduated at {{ formatDate(formation.graduatedAt, 'YYYY MMM') }}</div>
+        <div class="graduated-at"> {{ formation.graduatedAtVerbiage }} {{ formatDate(formation.graduatedAt, 'YYYY MMM', getLanguage()) }}</div>
       </div>
     </div>
   </section>
@@ -38,7 +24,7 @@ const otherInfo = reactive({
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 100px;
+  padding: 60px;
   h2 {
     font-size: 26px;
     padding: 0px;
