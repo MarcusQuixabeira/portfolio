@@ -28,4 +28,18 @@ footer {
   align-items: center;
   color: $golden;
 }
+@media (max-width: 1080px) {
+  footer {
+    min-height: 150px;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    padding: 10px;
+    .copywrite {
+      font-size: 1rem;
+    }
+    .text {
+      font-size: 1rem;
+    }
+  }
+}
 </style>

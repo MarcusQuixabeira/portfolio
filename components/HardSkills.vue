@@ -39,4 +39,13 @@ function getSequencialColor(): string {
     display: flex;
   }
 }
+@media (max-width: 1080px) {
+  .hard-skills {
+    flex-direction: column;
+    .skills-row {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
 </style>

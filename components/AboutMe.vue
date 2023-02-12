@@ -38,4 +38,20 @@ defineProps<{ data: AboutMe }>()
     padding-inline: 10%;
   }
 }
+
+@media (max-width: 1080px) {
+  .about-me {
+    gap: 27px;
+    padding: 20px 10px;
+
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.0rem;
+      padding-inline: 5%;
+    }
+  }
+}
 </style>

@@ -70,4 +70,35 @@ defineProps<{ data: OtherInfo}>()
     }
   }
 }
+
+@media (max-width: 1080px) {
+  .other-info {
+    h2 {
+      font-size: 1.2rem;
+    }
+    padding: 10px 30px;
+    min-height: 350px;
+    justify-content: space-around;
+    .academic-formations {
+      flex-direction: column;
+      gap: 40px;
+      justify-content: space-between;
+
+      .formation {
+        width: 100%;
+        flex-wrap: wrap;
+        pointer-events: none;
+        .degree {
+          font-size: 1rem;
+        }
+        .institution {
+          font-size: .8rem;
+        }
+        .graduated-at {
+          font-size: .6rem;
+        }
+      }
+    }
+  }
+}
 </style>

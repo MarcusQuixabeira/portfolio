@@ -5,59 +5,60 @@
 }
 
 html {
-    box-sizing: border-box;
-    color: $deep-blue;
+  box-sizing: border-box;
+  color: $deep-blue;
 }
 
 body {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    background-color: $base-color;
-    margin: 0px;
-    padding: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  background-color: $base-color;
+  font-size: 1.25rem;
+  margin: 0px;
+  padding: 0px;
 }
 
 .deep-blue {
-    background-color: $deep-blue;
-    color: $white
+  background-color: $deep-blue;
+  color: $white
 }
 
 .light-blue {
-    background-color: $light-blue;
-    color: $white
+  background-color: $light-blue;
+  color: $white
 }
 
 .deep-grey {
-    background-color: $deep-grey;
-    color: $white
+  background-color: $deep-grey;
+  color: $white
 }
 
 .light-grey {
-    background-color: $light-grey;
-    color: $white
+  background-color: $light-grey;
+  color: $white
 }
 
 .deep-green {
-    background-color: $deep-green;
-    color: $white
+  background-color: $deep-green;
+  color: $white
 }
 
 .light-green {
-    background-color: $light-green;
-    color: $white
+  background-color: $light-green;
+  color: $white
 }
 
 .purple {
-    background-color: $purple;
-    color: $white
+  background-color: $purple;
+  color: $white
 }
 
 .golden {
-    background-color: $golden;
-    color: $deep-blue;
+  background-color: $golden;
+  color: $deep-blue;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }

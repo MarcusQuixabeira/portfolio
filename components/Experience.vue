@@ -44,4 +44,30 @@ defineProps<{ experience: Experience, color: string }>()
 .job-description {
   font-size: 22px;
 }
+
+@media (max-width: 1080px) {
+  .job-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .company {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .date-interval {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .time {
+    font-size: 1.2rem;
+  }
+
+  .job-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 </style>
