@@ -385,7 +385,7 @@ const mainContent = {
         ],
       ],
       otherInfo: {
-        title: 'ACADEMIC FORMATIONS',
+        title: 'ACADEMIC FORMATION',
         formations: [
           {
             degree: 'Technologist Degree in Systems Analysis and Development',

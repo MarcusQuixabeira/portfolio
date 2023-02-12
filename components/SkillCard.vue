@@ -50,4 +50,27 @@ function getXpTimeVerbiage(skill: HardSkill) {
   display: flex;
   gap: 10px;
 }
+@media (max-width: 1080px) {
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .time {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .time-lable {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .subs {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 </style>

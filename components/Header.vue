@@ -79,4 +79,35 @@ defineProps<{ data: Header }>()
     }
   }
 }
+
+@media (max-width: 1080px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 20px 10px;
+
+    .portrait {
+      img {
+        border: 3px solid $golden;
+        border-radius: 4px;
+        width: 180px;
+      }
+    }
+    .credentials {
+      gap: 27px;
+
+      .name {
+        font-size: 1.2rem;
+        padding-inline: 0px;
+        line-height: normal;
+      }
+
+      .title {
+        font-size: .9rem;
+        text-align: center;
+      }
+    }
+  }
+}
 </style>

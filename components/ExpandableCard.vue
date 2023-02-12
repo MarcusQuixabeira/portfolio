@@ -53,4 +53,17 @@ defineProps<{ color: string, coverClass?: string, contentClass?: string }>()
     display: flex;
   }
 }
+
+@media (max-width: 1080px) {
+  .card {
+    pointer-events: none;
+    .cover {
+      display: none;
+    }
+
+    .content {
+      display: flex;
+    }
+  }
+}
 </style>
