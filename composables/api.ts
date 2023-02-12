@@ -257,7 +257,7 @@ const mainContent = {
         {
           cover: 'A',
           remote: true,
-          jobTitle: 'Senior Software Engineer Supervisor',
+          jobTitle: 'Software Engineer Supervisor',
           company: 'Anchor Loans',
           startDate: new Date('2022-04-01'),
           endDate: new Date('2022-06-31'),
