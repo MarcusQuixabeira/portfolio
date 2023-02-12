@@ -23,4 +23,10 @@ function getColor(index: number): string {
   width: 100%;
   display: flex;
 }
+
+@media (max-width: 1080px) {
+  .last-experiences {
+    flex-direction: column;
+  }
+}
 </style>

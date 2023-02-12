@@ -50,5 +50,29 @@ defineProps<{ data: SoftSkills }>()
       color: $white;
     }
   }
+
+}
+
+@media (max-width: 1080px) {
+  .soft-skills {
+    padding: 20px 20px;
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .list {
+      padding: 10px 10px;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+
+      .skill {
+        font-size: 1rem;
+        pointer-events: none;
+        border: 1px solid $deep-blue;
+        width: 100%;
+      }
+    }
+  }
 }
 </style>
