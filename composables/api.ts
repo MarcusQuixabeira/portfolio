@@ -16,8 +16,10 @@ const mainContent = {
           Sou casado, pai de uma garotinha e tenho como hobbies jogar videogames e jogos de mesa.
           Tenho muito interesse sobre novas tecnologias e sou muito curioso sobre assuntos da natureza.
           Atuo profissionalmente como desenvolvedor de softwares em plataforma web desde o ano de 2007.
-          Deste ano até hoje já tive a oportunidade de trabalhar com um vasto número de tecnologias e também
-          em várias funções dentro da área de desenvolvimento. Minha primeira stack era baseada em Java EE, 
+          Deste então já tive a oportunidade de trabalhar com um vasto número de tecnologias e também
+          em várias funções dentro da área de desenvolvimento.`,
+        text2: `
+          Minha primeira stack era baseada em Java EE, 
           usando pojos, servlets, jsp, css, html, javascript, struts, tomcat, hibernate. Mais tarde, por volta 
           de 2012, comecei a estudar Ruby on Rails e logo em seguida comecei a trabalhar com este framework. 
           Em 2013 tive minhas primeiras experiências desenhando e implementando arquiteturas desacopladas e
@@ -215,27 +217,30 @@ const mainContent = {
       aboutMe: {
         title: 'ABOUT ME',
         text: `
-        Hello, my name is Marcus, I have a degree in systems analysis and development and in biology.
-        I'm married, I'm the father of a little girl and my hobbies are playing videogames and board games.
-        I am very interested in new technologies and I am very curious about matters of nature.
-        I work professionally as a web platform software developer since 2007.
-        From this year until today I already had the opportunity to work with a vast number of technologies and also
-        in various roles within the development area. My first stack was based on Java EE,
-        using pojos, servlets, jsp, css, html, javascript, struts, tomcat, hibernate. Later, around
-        2012, I started studying Ruby on Rails and soon after I started working with this framework.
-        In 2013 I had my first experiences designing and implementing decoupled architectures and
-        I was able to create and evolve Rest APIs and also progressive web clients as well as hybrid mobile apps
-        using some javascript frameworks like Ionic (Angular) and Quasar (Vue.js). In 2017 I started my first
-        international experience, working remotely with a Python-based stack with the frameworks
-        Pyramid, Flask and Vue.js. Despite the challenging environment, which required integration with a huge amount of
-        data management, legacy code maintenance, and high coupling, I integrated a brilliant and very diligent team,
-        and together we create and evolve critical business solutions. In mid-2022, I decided to accept a
-        new international opportunity. I wanted to work more intensively with Javascript, and after
-        accept this offer, I worked with Javascript on the backend (Node, Express) and also on the frontend
-        (Vue.js, Nuxt.js), helping to create and evolve high demand APIs, microservices and rich web systems
-        that impacted millions of users around the world. If you want to know me a little more, give me a
-        look through the rest of the page and feel free to contact me through any of the
-        social links on that page. I would be happy to meet you.
+          Hello, my name is Marcus, I have a degree in systems analysis and development and also in biology.
+          I'm married, I'm the father of a little girl and my hobbies are playing videogames and board games.
+          I am very interested in new technologies and I am very curious about matters of nature.
+          I work professionally as a web platform software developer since 2007.
+          Since then, I've had the opportunity to work with a vast number of technologies and also
+          in various roles within the development area.
+        `,
+        text2:`
+          My first stack was based on Java EE,
+          using pojos, servlets, jsp, css, html, javascript, struts, tomcat, hibernate. Later, around
+          2012, I started studying Ruby on Rails and soon after I started working with this framework.
+          In 2013 I had my first experiences designing and implementing decoupled architectures and
+          I was able to create and evolve Rest APIs and also progressive web clients as well as hybrid mobile apps
+          using some javascript frameworks like Ionic (Angular) and Quasar (Vue.js). In 2017 I started my first
+          international experience, working remotely with a Python-based stack with the frameworks
+          Pyramid, Flask and Vue.js. Despite the challenging environment, which required integration with a huge amount of
+          data management, legacy code maintenance, and high coupling, I integrated a brilliant and very diligent team,
+          and together we create and evolve critical business solutions. In mid-2022, I decided to accept a
+          new international opportunity. I wanted to work more intensively with Javascript, and after
+          accept this offer, I worked with Javascript on the backend (Node, Express) and also on the frontend
+          (Vue.js, Nuxt.js), helping to create and evolve high demand APIs, microservices and rich web systems
+          that impacted millions of users around the world. If you want to know me a little more, give me a
+          look through the rest of the page and feel free to contact me through any of the
+          social links on that page. I would be happy to meet you.
         `,
       },
       lastExperiences: [

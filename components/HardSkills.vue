@@ -42,6 +42,7 @@ function getSequencialColor(): string {
 @media (max-width: 1080px) {
   .hard-skills {
     flex-direction: column;
+    max-height: none;
     .skills-row {
       width: 100%;
       flex-direction: column;
