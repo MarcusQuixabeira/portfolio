@@ -39,6 +39,19 @@ const mainContent = {
       },
       lastExperiences: [
         {
+          cover: 'A',
+          remote: true,
+          jobTitle: 'Engenheiro de Software Supervisor',
+          company: 'Anchor Loans',
+          startDate: new Date('2023-04-01'),
+          endDate: new Date(),
+          jobDescription:`
+            Gerenciou times em ares do negócio específicas, treinando desenvolvedores em
+            suas carreiras e também em boas praticas de desenvolvimento. Atuou também recrutando
+            novos talentos. 
+          `
+        },
+        {
           cover: 'R',
           remote: true,
           jobTitle: 'Engenheiro de Software Sênior Fullstack',
@@ -220,7 +233,7 @@ const mainContent = {
           Hello, my name is Marcus, I have a degree in systems analysis and development and also in biology.
           I'm married, I'm the father of a little girl and my hobbies are playing videogames and board games.
           I am very interested in new technologies and I am very curious about matters of nature.
-          I work professionally as a web platform software developer since 2007.
+          I starded to work professionally as a web software developer in 2007.
           Since then, I've had the opportunity to work with a vast number of technologies and also
           in various roles within the development area.
         `,
@@ -233,8 +246,8 @@ const mainContent = {
           using some javascript frameworks like Ionic (Angular) and Quasar (Vue.js). In 2017 I started my first
           international experience, working remotely with a Python-based stack with the frameworks
           Pyramid, Flask and Vue.js. Despite the challenging environment, which required integration with a huge amount of
-          data management, legacy code maintenance, and high coupling, I integrated a brilliant and very diligent team,
-          and together we create and evolve critical business solutions. In mid-2022, I decided to accept a
+          data, legacy code maintenance, and high coupled solutions, I integrated a brilliant and very diligent team,
+          and together we created and evolved critical business solutions. In mid-2022, I decided to accept a
           new international opportunity. I wanted to work more intensively with Javascript, and after
           accept this offer, I worked with Javascript on the backend (Node, Express) and also on the frontend
           (Vue.js, Nuxt.js), helping to create and evolve high demand APIs, microservices and rich web systems
@@ -244,6 +257,18 @@ const mainContent = {
         `,
       },
       lastExperiences: [
+        {
+          cover: 'A',
+          remote: true,
+          jobTitle: 'Software Engineer Supervisor',
+          company: 'Anchor Loans',
+          startDate: new Date('2023-04-01'),
+          endDate: new Date(),
+          jobDescription:`
+            Managed teams in specific Business areas, coaching developers on their careers
+            and in good development practices. Worked recruiting new talents as well.
+          `
+        },
         {
           cover: 'R',
           remote: true,
