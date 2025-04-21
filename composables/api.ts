@@ -444,7 +444,20 @@ const socials = {
   data: {
     linkedinUrl: 'https://www.linkedin.com/in/marcus-quixabeira-5954bb140/',
     githubUrl: 'https://github.com/MarcusQuixabeira',
-    email: 'mquixaba@gmail.com'
+    email: 'mquixaba@gmail.com',
+    resumeUrl: 'https://mquixaba-portfolio.s3.us-east-1.amazonaws.com/download/Marcus-Quixabeira-Resume.pdf',
+    ptBr: {
+      linkedinTitle: 'Perfil Linkedin',
+      githubTitle: 'Perfil GitHub',
+      emailTitle: 'Enviar Email',
+      resumeTitle: 'Currículo'
+    },
+    enUs: {
+      linkedinTitle: 'Linkedin Profile',
+      githubTitle: 'GitHub Profile',
+      emailTitle: 'Send Email',
+      resumeTitle: 'Resume'
+    }
   }
 }
 
