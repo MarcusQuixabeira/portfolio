@@ -46,7 +46,7 @@ const mainContent = {
           startDate: new Date('2023-04-01'),
           endDate: new Date(),
           jobDescription:`
-            Gerenciou times em ares do negócio específicas, treinando desenvolvedores em
+            Gerenciou times em áreas do negócio específicas, treinando desenvolvedores em
             suas carreiras e também em boas praticas de desenvolvimento. Atuou também recrutando
             novos talentos. 
           `
@@ -74,7 +74,7 @@ const mainContent = {
           startDate: new Date('2022-04-01'),
           endDate: new Date('2022-06-31'),
           jobDescription:`
-            Gerenciou times em ares do negócio específicas, treinando desenvolvedores em
+            Gerenciou times em áreas do negócio específicas, treinando desenvolvedores em
             suas carreiras e também em boas praticas de desenvolvimento. Atuou também recrutando
             novos talentos. 
           `
@@ -154,7 +154,7 @@ const mainContent = {
           {
             cover: 'P',
             name: 'Python',
-            subs: ['Jinja', 'Pymongo', 'Graphene', 'Alenbic', 'Marshmallow', 'Pyramid', 'Flask', 'MongoEngine'],
+            subs: ['Jinja', 'Pymongo', 'Graphene', 'Alembic', 'Marshmallow', 'Pyramid', 'Flask', 'MongoEngine'],
             years: 6
           },
           {
@@ -371,7 +371,7 @@ const mainContent = {
           {
             cover: 'P',
             name: 'Python',
-            subs: ['Jinja', 'Pymongo', 'Graphene', 'Alenbic', 'Marshmallow', 'Pyramid', 'Flask', 'MongoEngine'],
+            subs: ['Jinja', 'Pymongo', 'Graphene', 'Alembic', 'Marshmallow', 'Pyramid', 'Flask', 'MongoEngine'],
             years: 6
           },
           {
