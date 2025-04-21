@@ -442,7 +442,7 @@ const mainContent = {
 
 const socials = {
   data: {
-    linkedinUrl: 'https://www.linkedin.com/in/marcus-vinicius-q-b-dos-santos-5954bb140/',
+    linkedinUrl: 'https://www.linkedin.com/in/marcus-quixabeira-5954bb140/',
     githubUrl: 'https://github.com/MarcusQuixabeira',
     email: 'mquixaba@gmail.com'
   }
