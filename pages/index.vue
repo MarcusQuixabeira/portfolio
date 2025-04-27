@@ -11,5 +11,6 @@ const mainContent = reactive(await fetchMainContent());
     <HardSkills :data="mainContent[getLanguage()].hardSkills" />
     <OtherInfo :data="mainContent[getLanguage()].otherInfo "/>
     <Footer :data="mainContent[getLanguage()].footer" />
+    <FloatSocialLinks />
   </div>
 </template>

@@ -222,7 +222,7 @@ const mainContent = {
       footer: {
         createdAt: new Date('2023-02-01'),
         copyRights: 'Todos os direitos reservados',
-        developedBy: 'desenvolvido por Marcus Quixabeira',
+        developedBy: 'Desenvolvido por Marcus Quixabeira',
       }
     },
     enUs: {
@@ -445,7 +445,7 @@ const mainContent = {
       },
       footer: {
         createdAt: new Date('2023-02-01'),
-        developedBy: 'crafted by Marcus Quixabeira',
+        developedBy: 'Crafted by Marcus Quixabeira',
         copyRights: 'All rights reserved'
       }
     }
