@@ -44,11 +44,16 @@ const mainContent = {
           jobTitle: 'Engenheiro de Software Supervisor',
           company: 'Anchor Loans',
           startDate: new Date('2023-04-01'),
-          endDate: new Date(),
+          endDate: new Date('2025-05-01'),
           jobDescription:`
             Gerenciou times em áreas do negócio específicas, treinando desenvolvedores em
-            suas carreiras e também em boas praticas de desenvolvimento. Atuou também recrutando
-            novos talentos. 
+            suas carreiras e também em boas praticas de desenvolvimento. Ajudou a desenhar
+            e implementar soluções escaláveis, manuteníveis, disponíveis e confiáveis, usando
+            Python, Vuejs e Mongodb com principais tecnologias, na plataforna AWS. Ajudou a planejar
+            e executar integrações entre aplicações internas e serviços de terceiros tais como
+            Docusign, Salesforce, Twilio, Sendgrid, Experian e muitos outros. Comunicou em varios
+            níveis, preenchendo lacunas, reduzindo ruídos, ao mediar a linha de negócios e time de
+            engenharia. Atuou também no recrutamentoo e mentoria de novos talentos.
           `
         },
         {
@@ -263,10 +268,17 @@ const mainContent = {
           jobTitle: 'Software Engineer Supervisor',
           company: 'Anchor Loans',
           startDate: new Date('2023-04-01'),
-          endDate: new Date(),
+          endDate: new Date('2025-05-01'),
           jobDescription:`
             Managed teams in specific Business areas, coaching developers on their careers
-            and in good development practices. Worked recruiting new talents as well.
+            and in good development practices. Helped to design and implement scalable, 
+            maintainable, disponible and error tolerant solutions using Python, Vuejs and
+            Mongodb as main technologies on AWS platform. Helped to design and execute
+            integration plans between internal applications and 3rd party solutions like
+            Docusign, Salesforce, Twilio, SendGrid, Experian and many others. Communicated
+            at several levels, filling gaps, reducing noises in order to mediate the line of
+            business and engineering team. Worked on recruiting and mentoring of new talents
+            as well.
           `
         },
         {
