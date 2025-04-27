@@ -4,7 +4,6 @@ const footer = defineProps<{ data: Footer }>()
 function getCopyWriteVerbiage() {
   const start: String = formatDate(new Date(footer.data.createdAt), 'YYYY');
   const now: String = formatDate(new Date(), 'YYYY');
-  const verbiage: String = 'All right reserved';
   if (start == now) {
     return `&#169; ${start} ${footer.data.copyRights}`
   }
@@ -24,8 +23,10 @@ function getCopyWriteVerbiage() {
 footer {
   min-height: 55px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-inline: 400px;
   color: $golden;
 }
 @media (max-width: 1080px) {
@@ -34,6 +35,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap-reverse;
     padding: 10px;
+    justify-content: space-around;
+    gap: 0px;
     .copywrite {
       font-size: 1rem;
     }
